@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The witcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v5.14.0/css/pro.min.css">
+    <script type="text/javascript" src="js/script.js" async defer></script>
+</head>
+<body>
+ 
+    <header>
+        <h1>Toss a coin to your witcher</h1>
+    </header>
+<div id="pantalla-wrap">
+    <div class="container">
+        <div class="texto1 active"> 
+            <h2>Todos saben que soy el brujo más poderoso y temido de la tierra, si quieres algo de mí podemos hacer buenos negocios</h2>
+            <form action="input">
+                <select name="selector" id="selector">
+                    <option disabled selected>- Selecciona una tarea -</option>
+                    <option value="500" class='option'>500€ Necesito que me traigas la cabeza de monstruo volador</option>
+                    <option value="200" class='option'>200€ Captura al monstruo que me persigue </option>
+                    <option value="800" class='option'>900€ Hazme un masaje</option>
+                </select>
+            </form>
+        </div>
+            <div class="texto2">
+                    <h2>¿Cuánto pretendes pagarme, rata?</h2>
+                    <form action=""  method="post" id="form">
+                        <input type="number" name="precioOferta"  placeholder="¿Cuánto me das?" id="precio" value="">
+                        <input type="submit" class="oferta" value="Ofrecer">
+                    </form>   
+                    <p class="errorText">Introduce la cantidad a pagar</p>          
+            </div>  
+            <div class="texto3">
+                    <h2 class="acepta">Acepto el trato, pero primero tendrás que darme el dinero.</h2>
+                    <p>Pulsa <span>W</span> para verme en accion</p>
+            </div>
+                <div class="texto4">
+                <h2 class="rechaza">Vete de aquí si no quieres que te arranque las extremidades una a una y me las coma.</h2>
+                <form action=""  method="post" id="again">
+                    <input type="submit" class="reintentar" value="Dar otro precio">
+                </form>
+            </div>
+    </div>
+    
+</div>  
+<div class="video">
+    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ETY44yszyNc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+    
+</body>
+</html>
